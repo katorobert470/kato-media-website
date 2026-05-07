@@ -1,0 +1,291 @@
+{padding;0;
+margin:0;
+box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*nav bar*/
+nav{
+    justify-content: space-between;
+    margin-top: 20px;
+    display: flex;
+    margin-right: 10px;
+    padding: 0 50px;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    width: 1200px;
+    /*keeping the nav fixed at the top with out it being scrolled up on scroling tthe mouse*/
+    position: sticky;
+    top: 0;
+    background-color: aliceblue;
+}
+/*responsiveness of the nav to a maximum screen of 500px*/
+@media (max-width:500px){
+    nav{
+    justify-content: space-between;
+    margin-top: 20px;
+    display: flex;
+    margin-right: 10px;
+    padding: 0 50px;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    width:100%;
+}
+nav .logos #logo{
+    font-size: large;
+    font-weight: 400;
+    font-family: 'poppins';
+    color: rgb(15, 15, 82);
+    padding-top: 20px;
+}
+nav .links li{
+    display: none;/* so as wen the screen is 500px and lower, the words won't  display*/
+}
+nav .links i{/* so that only icons display tto a maximum of 500px screen*/
+    display: flex;
+}
+}
+.logos{
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+}
+#logo{
+    font-size: xx-large;
+    margin-left: 20px;
+    font-weight: 600;
+    font-family: 'poppins';
+    color: blue;
+    padding-top: 20px;
+}
+.links{
+    display: flex;
+    color: green;
+    font-weight: 500;
+    gap: 20px;
+    padding-top: 40px;
+    list-style: none;
+}
+.links a{
+    text-decoration: none;/*to remove the underlining on the text*/
+}
+.links li:hover{/*links change color one a mouse is hovered over*/
+    font-weight: 800;
+    color:red;
+    font-size: larger;
+}
+.links span:last-child{/* tagenting and designing thee last link in the nav*/
+    color: white;
+    background-color:rgb(32, 196, 187) ;
+    padding: 2px;
+    border-radius: 5px;
+    height: 15px;
+     
+}
+#description{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    text-align: left;
+    border-width: 600px;
+    background-image: url('photo6.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding-top: 570px;
+    width: 1200px;
+}
+@media (max-width:500px){
+    #description{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border-width: 100%;
+    background-image: url('photo6.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+}
+#description .text h1{
+    line-height: 13px;
+    text-align: left; color: rgb(3, 9, 17); font-size: xx-large;}
+@media(max-width:500px){
+    .skills span{
+       display: none;
+    }
+    #description .text h1{
+        font-size: large;
+    }
+}
+.skills{
+    color: blue;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    padding: ;
+}
+.skills button:hover{
+    background-color:rgb(27, 26, 26);
+    height: 20px;
+    width: fit-content;
+    color: white;
+}
+.photo{
+    margin-top: 20px;
+    
+}
+#services{
+    padding: 30px;
+    margin-top: -20px;
+    text-align: center;
+    border-radius: 5%;
+    border-width: 600px;
+    width: 1200px;
+}
+@media (max-width:500px){  
+#services{
+    padding: 10px;
+    margin-top: -20px;
+    text-align: center;
+    width: 100%;
+}
+#services .button span{
+    display: none;/*such that its just the icons to display once the screen is 500px and lower*/
+}
+}
+
+#services h1{
+    align-items: center;
+}
+#services .button span{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: black;
+}
+/*button changes colour and also zooms in a little bit once hovered over*/
+#services .button button:hover{
+    background-color:rgb(27, 26, 26);
+    height: 20px;
+    width: fit-content;
+    color: white;
+}
+#services .button a{
+    text-decoration: none;
+}
+ 
+.staff-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 1200px;
+}
+@media (max-width:500px) {
+    .staff-container{
+    display: flex;
+    flex-direction: column;/*on max screen of 500px, the photos are displayed vertically*/
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    } 
+    
+}
+.staff-container img{
+    width: 200px;
+    height:250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.staff-container img:hover{
+    width: 260px;
+    height:300px;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+#staff h1{
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+}
+.partner-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width:1200px;
+    }
+.partner-container img{
+    width: 100px;
+    height:100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+@media (max-width:500px) {
+    .partner-container{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 10px;
+    width:100%;
+    padding-left: 10px;
+    }
+    .partner-container img{
+    width: 40px;
+    height:40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.partner-container p{
+    font-size:x-small;
+}
+}
+.partner-container img:hover{
+    width: 140px;
+    height: 120px;
+    objiect-fit:cover;
+    border-radius: 20px;
+}
+
+#partner h1{
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 8px;
+    border-top: 3px solid black;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    width: 1200px;
+     background-color: rgb(224, 234, 243);
+}
+}
+@media (max-width:500px) {
+    #footer{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 3px;
+    border-top: 3px solid black;
+    width: 100%;
+    }
+}
+main{
+    background-color: rbga(131, 207, 182, 0.4);
+   /* width: 1200px;*/
+}

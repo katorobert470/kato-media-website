@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="kato Robert">
+<meta name="description" content="this is the Kato Media website. you can view our services and also hire us from here">
+<meta name="keywords" content="photography, photo editing, web development, graphics designing,Kato Media">
+    <title>ato Media</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .form{
+    text-align: center;
+    margin-top: 150px;
+    border-radius: 40%;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 200px;
+    margin-left: 20%;
+    background-color: rgb(224, 239, 243);
+    width: 400px;
+    height: 400px;
+    padding-top: 50px;
+    background-image: url(photo2.JPG);
+    background-size: cover;
+    background-position: center;
+}
+@media(max-width:500px){
+    .form{
+    width: 100%;
+    text-align: center;
+    padding-top: 120px;
+    }
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 8px;
+    border-top: 3px solid black;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    width: 1200px;
+     background-color: rgb(224, 234, 243);
+}
+
+@media (max-width:500px) {
+    #footer{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 3px;
+    border-top: 3px solid black;
+    width: 100%;
+    }
+}
+
+</style>
+<body background-image="photo.jpeg">
+     <nav>
+       <div class="logos">
+          <div class="logo-img"><img src="logo.png" style="height: 70px; width: 100px;"></div>
+          <span><div id="logo"> KATO MEDIA</div></span>
+       </div>
+        <div class="links">
+             <a href="index.html#description"><i class="fa-solid fa-house"></i></a><li> <a href="#"> <a href="index.html#description">ABOUT US </a></li>
+            <span><a href="index.html#services"><i class="fa-solid fa-tools"></i></a></span><span><li><a href="index.html#services">SERVICES</a></li></span>
+            <span> <a href="index.html#footer"><i class="fa-solid fa-phone"></i></a></span><span><li> <a href="index.html#footer"> CONTACT US</a></li></span>
+            <span><a href="HIRE-US.html"><i class="fa-solid fa-handshake-angle"></i></a></span><span></i><li><a href="HIRE-US.html">HIRE-US</a></li></span>
+        </div>
+
+    </nav>
+<main>
+     <div class="form">
+    <form method="post" action="">
+        <h1> HIRE US</h1>
+        <label for="name">NAME:</label>
+        <input type="text" id="name" placeholder="kato Robert" required style="background-color: yellow;"> <br><br>
+        <label for="email"> Email:</label>
+        <input type="email" id="email" name="email" placeholder="katorobert470@gmail.com" required > <br><br>
+        <labelfor=payments> Select service</label>
+        <select for="service" id="service"><!--this is to display a drop down menu-->
+            <option> GRAPHICS</option>
+            <option> PHOTOGRAPHY</option>
+            <option>  EDITING</option>
+            <option>  PROGRAMING</option>
+         </select> <br><br>
+         <labelfor=payments> Payment method</label>
+         <select for="payments" id="payments"><!--this is to display a drop down menu-->
+            <option> MTN MOBILE MONEY</option>
+            <option> AIRTEL MOBILE MONEY</option>
+            <option>  MOBILE BANKING</option>
+         </select> <br><br>
+         <button type="submit" style="color: green;">submit</button>
+         <span><button type="reset" style="color: brown;"> reset</button></span>
+           </form>
+     </div>
+</main>
+<section id="footer">
+<div class="footer">
+<div class="footer-address">
+    <p>Seeta opp-cleanex</p>
+    <p>kampala Uganda</p>
+    <p> 0707058526  / 0769708473</p>
+    <p> katorobert47@gmail.com</p>
+</div>
+
+</div>
+
+</section>
+</body>
+</html>
