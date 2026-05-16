@@ -39,6 +39,9 @@ nav .logos #logo{
     color: rgb(15, 15, 82);
     padding-top: 20px;
 }
+nav .logos .logo-img{
+display:none;
+}
 nav .links li{
     display: none;/* so as wen the screen is 500px and lower, the words won't  display*/
 }
