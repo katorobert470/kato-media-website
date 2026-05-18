@@ -23,36 +23,52 @@ nav{
 /*responsiveness of the nav to a maximum screen of 500px*/
 @media (max-width:500px){
     nav{
-    justify-content: space-between;
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
     margin-right: 10px;
     padding: 0 50px;
     border-bottom: 3px solid black;
     padding-bottom: 10px;
     width:100%;
+    max-width: 460px;
+    box-sizing: border-box;
+    align-items: center;
+    
 }
 nav .logos #logo{
-    font-size: large;
+    font-size:large;
     font-weight: 400;
     font-family: 'poppins';
     color: rgb(15, 15, 82);
     padding-top: 20px;
+    margin-left: 3px;
+    text-align: center;
+    
 }
+
 nav .logos .logo-img{
-display:none;
+  padding-top: 10px;
+  margin-left: -5px;
+  display: none;
 }
 nav .links li{
     display: none;/* so as wen the screen is 500px and lower, the words won't  display*/
 }
 nav .links i{/* so that only icons display tto a maximum of 500px screen*/
     display: flex;
+    gap: 2px;
 }
 }
 .logos{
     display: flex;
     gap: 10px;
     justify-content: left;
+    padding-left: -4px;
+}
+nav .logos .logo-img{
+padding-top: 2px;
+padding-left: -15px;
 }
 #logo{
     font-size: xx-large;
@@ -99,6 +115,7 @@ nav .links i{/* so that only icons display tto a maximum of 500px screen*/
     height: 600px;
     padding-top: 570px;
     width: 1200px;
+    font: poppins;
 }
 @media (max-width:500px){
     #description{
@@ -106,6 +123,7 @@ nav .links i{/* so that only icons display tto a maximum of 500px screen*/
     align-items: center;
     text-align: left;
     border-width: 100%;
+    max-width: 450px;
     background-image: url('photo6.jpg');
     background-size: cover;
     background-position: center;
@@ -113,11 +131,23 @@ nav .links i{/* so that only icons display tto a maximum of 500px screen*/
     padding-top: 100px;
     padding-bottom: 50px;
     width: 100%;
+    max-width: 460px;
+    box-sizing: border-box;
 }
 }
 #description .text h1{
     line-height: 13px;
-    text-align: left; color: rgb(3, 9, 17); font-size: xx-large;}
+    text-align: left;
+    color: rgb(3, 9, 17);
+     font-size: xx-large;
+     text-shadow: 40px 10px 40px rgb(255, 255, 255);
+    }
+    #description .text p{
+    line-height: 13px;
+    text-align: left;
+    color: rgb(3, 9, 17);
+     text-shadow: 40px 10px 40px rgb(255, 255, 255);
+    }
 @media(max-width:500px){
     .skills span{
        display: none;
@@ -260,7 +290,7 @@ nav .links i{/* so that only icons display tto a maximum of 500px screen*/
 }
 
 #partner h1{
-    margin-top: 100px;
+    margin-top: 20px;
     justify-content: center;
     text-align: center;
 }
@@ -276,7 +306,7 @@ nav .links i{/* so that only icons display tto a maximum of 500px screen*/
     width: 1200px;
      background-color: rgb(224, 234, 243);
 }
-}
+
 @media (max-width:500px) {
     #footer{
     display: flex;
@@ -287,7 +317,13 @@ nav .links i{/* so that only icons display tto a maximum of 500px screen*/
     border-top: 3px solid black;
     width: 100%;
     }
+    #partner h1{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
+}
+
 main{
     background-color: rbga(131, 207, 182, 0.4);
    /* width: 1200px;*/
